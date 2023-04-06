@@ -1,0 +1,230 @@
+:root{
+    --normal-font: 'Mukta', sans-serif;
+    --body-bg-color: #E3E7F1;
+    --header-background-color : #000000;
+    --title-font :'MuseoModerno', cursive;
+    --defination-title-color : #222831;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--normal-font);
+    padding: 1.5rem 0rem 0rem 0rem; 
+}
+
+header{
+    width: 98vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    margin-bottom: 3rem;
+    
+}
+
+.logo-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    width: 18rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.3rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    background-color: var(--header-background-color);
+    color: #F1F6F8;
+    font-family: 'MuseoModerno', cursive;
+    position: absolute;
+    left: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: -5px 5px #9ca7fb; */
+}
+
+.logo-div h1{
+    text-shadow: 2px 2px #9ca7fb;
+    cursor: pointer;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: var(--header-background-color);
+    width: 20rem; */
+    padding: 1.5rem 2rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    position: absolute;
+    right: 0;
+    /* box-shadow: 5px 5px #9ca7fb; */
+}
+
+nav li{
+    list-style: none;
+    font-size: 1.1rem;
+    margin: 0rem 1rem;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: black
+}
+
+nav li a:hover{
+    color: #9ca7fb;
+}
+
+
+.detail-section {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+details{
+    border: 2px solid black;
+    border: 2px solid #21273D;
+    padding: 1rem;
+    margin: 1rem 1rem 0rem 1rem; 
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+summary{
+    font-family: var(--normal-font);
+    list-style: none;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+details p {
+    font-family: var(--normal-font);
+    margin: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+details p span {
+    color : var(--defination-title-color);
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #9BA4B4;
+}
+
+.coursoer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.images-div{
+    width: 60rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 300ms ease-in-out;
+}
+
+.images-div a img{
+    width: 60rem;
+    height: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    margin-top: 0.3rem;
+}
+
+.images-div a{
+    color : #222831;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-family: var(--title-font);
+    text-shadow: 2px 2px #C6CBEF;
+}
+
+.previous{
+    position: absolute;
+    top: 47%;
+    left: 0rem;
+    width: 1.5rem;
+    height: 2.5rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: #E7EAF6;
+}
+
+.next{
+    position: absolute;
+    top: 47%;
+    right: 0rem;
+    width: 1.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: #E7EAF6;
+}
+
+footer{
+    width: 100vw;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+@media (max-width:1050px){
+
+    .images-div{
+        width: 90vw;
+        height: 70vh;
+    }
+    
+    .images-div a img{
+        width: 90vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:570px){
+    .images-div a{
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    
+    summary{
+        letter-spacing: 0rem;
+    }
+}
+
+
