@@ -103,8 +103,7 @@ nav li a:hover{
 }
 
 details{
-    border: 2px solid black;
-    border: 2px solid #21273D;
+    border: 2px solid #1b1b1c;
     padding: 1rem;
     margin: 1rem 1rem 0rem 1rem; 
     width: fit-content;
@@ -116,6 +115,10 @@ summary{
     list-style: none;
     letter-spacing: 0.1rem;
     cursor: pointer;
+}
+
+details:hover{
+    border: 2px solid #9ca7fb;
 }
 
 details p {
