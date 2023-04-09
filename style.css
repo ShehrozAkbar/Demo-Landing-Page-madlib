@@ -172,7 +172,7 @@ details p span {
 
 .previous{
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 0rem;
     width: 1.5rem;
     height: 2.5rem;
@@ -184,7 +184,7 @@ details p span {
 
 .next{
     position: absolute;
-    top: 47%;
+    top: 48%;
     right: 0rem;
     width: 1.5rem;
     height: 2.5rem;
