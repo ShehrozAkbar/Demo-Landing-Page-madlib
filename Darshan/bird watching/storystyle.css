@@ -1,0 +1,286 @@
+:root{
+    --title-font : 'MuseoModerno', cursive;
+    --card-header : 'Bebas Neue', cursive;
+    --simple-font : 'Poppins', sans-serif;
+    --background-color : #EEEEEE;
+    --header-background-color : #222831;
+    --defination-title-color : #222831;
+    --card-background-color : #9BA4B4;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 1rem;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+header{
+    font-family: var(--title-font);
+    background-color:var(--header-background-color);
+    padding: 1rem 2rem;
+    letter-spacing: 0.3rem;
+    border-radius: 0.5rem;
+    /* color: #0B0B0D; */
+    color: #F1F6F8;
+    font-size: 1.4rem;
+    width: 55%;  
+}
+
+header h1{
+    text-shadow: 2px 2px #9ca7fb;
+}
+
+header h1 span {
+    text-shadow: none;
+    font-size: 50px;
+}
+
+
+.detail-section {
+    margin: 2rem;
+}
+
+details{
+    border: 2px solid black;
+    border: 2px solid #21273D;
+    padding: 1rem;
+    margin: 1rem 1rem 2rem 1rem; 
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+summary{
+    font-family: var(--title-font);
+    list-style: none;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+details p {
+    font-family: var(--simple-font);
+    margin: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+p span {
+    color : var(--defination-title-color);
+    letter-spacing: 0.1rem;
+}
+
+main {
+    width: 90vw;
+    margin: 5rem auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff95;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--card-background-color);
+}
+
+
+.user-inputs{
+    height: auto;
+    padding: 2rem; 
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+form div{
+    position: relative;
+    margin: 0.5rem 4rem;
+}
+
+form div .randomButton{
+    position: absolute;
+    right: -2rem;
+    top: 0rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+input{
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.buttons{
+    margin: 2rem auto 0rem auto;
+}
+
+.user-inputs .create-story{
+    background-color: #000000;
+    color: white;
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: var(--simple-font);
+    margin: 2rem;
+    border: none;
+}
+
+.clear{
+    color: white;
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: var(--simple-font);
+    margin: 2rem;
+    background-color: rgb(229, 87, 87);
+    border: none;
+}
+
+.story-text{
+    display: none;
+}
+
+.show-storyText{
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: var(--simple-font);
+}
+
+span{
+    font-size: 1.6rem;
+}
+
+show-input{
+    color: #4859ae;
+}
+
+.wrong-input{
+    border: 2px solid rgb(233, 95, 95);
+}
+
+
+footer{
+    margin-top: 3rem;
+    text-align: right;
+    padding: 0.5rem;
+}
+
+footer a{
+    color : #000000;
+    font-size: 1rem;
+    font-family: var(--simple-font);
+    letter-spacing: 0.1rem;
+    text-decoration: none;  
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.warning{
+    display: none;
+}
+
+.show-warning{
+    width: fit-content;
+    height: 20rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 9999;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.warning-text{
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.7rem;
+    font-family: var(--simple-font);
+    color: rgb(0, 0, 0);
+}
+
+.show-hidden-section{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+/* media queries */
+
+
+@media (max-width:960px){
+
+    header{
+        letter-spacing: 0.2rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    main {
+        margin: 3rem auto;
+    }
+
+    .story{
+        font-size: 1.2rem;
+        font-family: var(--simple-font);
+    }
+    
+    span{
+        font-size: 1.4rem;
+    }
+
+    header h1 span {
+        text-shadow: none;
+        font-size: 40px;
+    }
+
+    .warning-text{
+        font-size: 1.4rem;
+    }
+
+    .close{
+        width: 2.5rem;
+    }
+
+    .show-storyText{
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+}
