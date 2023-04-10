@@ -1,8 +1,7 @@
 :root {
-  --normal-font: "Mukta", sans-serif;
   --body-bg-color: #eee;
   --header-background-color: #000000;
-  --title-font: "MuseoModerno", cursive;
+  --secondary-font: "Lato", sans-serif;
   --defination-title-color: #222831;
 }
 
@@ -20,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--normal-font);
+  font-family: var(--secondary-font);
 }
 
 /* ====================================================== this CSS is for the header only ======================================================*/
@@ -98,21 +97,21 @@ header > div {
 .detail-section {
   margin: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
 details {
   border: 2px solid black;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   margin: 1rem 1rem 0rem 1rem;
   width: fit-content;
   border-radius: 0.5rem;
 }
 
 summary {
-  font-family: var(--normal-font);
+  font-family: var(--secondary-font);
   list-style: none;
   letter-spacing: 0.1rem;
   cursor: pointer;
@@ -124,8 +123,8 @@ details:hover {
 
 details p {
   transition: all 0.2s;
-
-  font-family: var(--normal-font);
+  letter-spacing: 0.1rem;
+  font-family: var(--secondary-font);
   margin: 0.5rem;
   color: rgb(0, 0, 0);
 }
@@ -154,13 +153,14 @@ details p span {
   align-items: center;
   justify-content: flex-start;
   transition: transform 300ms ease-in-out;
+  margin-bottom: 5rem;
 }
 
 .images-div a img {
   width: 60rem;
   height: 35rem;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
 }
 
 .images-div a {
@@ -416,4 +416,15 @@ details p span {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
+}
+
+/* media query for the details tag in smaller screen size. */
+
+@media (max-width: 670px){
+
+  
+.detail-section {
+  flex-direction: column;
+}
+
 }
