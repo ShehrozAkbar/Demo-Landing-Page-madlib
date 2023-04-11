@@ -37,10 +37,10 @@
           >
         </article>
         <article id="reference" class="topnav">
-          <a href="#home">Home</a>
-          <a href="#aboutus">AboutUs</a>
-          <a href="#stories">Stories</a>
-          <a href="#contact">Contact</a>
+          <a href="#">Home</a>
+          <a href="#aboutus"
+            >About<span style="visibility: hidden; font-size: 6px">1</span>us</a
+          >
         </article>
       </div>
     </header>
@@ -49,7 +49,7 @@
       <!-- instruction -->
 
       <details>
-        <summary class="instruction">Instructions</summary>
+        <summary class="instruction" id="inst">Instructions</summary>
         <p>
           To play, Select the image of the story and fill in the blanks with the
           requested words. When you’re done, click “Create Mad Libs” to view
@@ -80,7 +80,7 @@
     </section>
 
     <!-- slider / coursoer -->
-    <section class="coursoer">
+    <section class="coursoer" id="storie">
       <img class="previous" src="./icon-previous.svg" alt="" />
       <img class="next" src="./icon-next.svg" alt="" />
       <div class="images-div">
@@ -138,11 +138,11 @@
         <p class="footer-links">
           <a href="#" class="link-1">Home</a>
 
-          <a href="#">AboutUs</a>
+          <a href="#">About us</a>
 
-          <a href="#">Stories</a>
+          <a href="#storie">Stories</a>
 
-          <a href="#">Contact</a>
+          <a href="#inst">Instructions</a>
         </p>
 
         <p class="footer-company-name">MadLib Team-01 V-43 © 2023</p>
@@ -150,7 +150,7 @@
 
       <div class="footer-center">
         <div>
-          <i class="fa fa-map-marker"></i>
+          <i class="fa fa-location-dot"></i>
           <p><span>000 street, chingu headquaters</span>000 Island, Earth</p>
         </div>
 
@@ -160,7 +160,7 @@
         </div>
 
         <div>
-          <i class="fa fa-envelope"></i>
+          <i class="fa fa-envelope" style="font-size: 26px"></i>
           <p><a href="mailto:support@company.com">support@company.com</a></p>
         </div>
       </div>
