@@ -219,14 +219,14 @@ details p span {
   summary {
     letter-spacing: 0rem;
   }
-  #reference {
+  /* #reference {
     padding-top: 40px;
     flex-direction: column;
     gap: 8px;
-  }
-  #reference > a + a {
+  } */
+  /* #reference > a + a {
     margin-left: 0rem;
-  }
+  } */
 }
 
 /* ====================================================== this CSS for the footer ======================================================*/
