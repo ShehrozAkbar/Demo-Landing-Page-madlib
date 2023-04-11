@@ -420,11 +420,8 @@ details p span {
 
 /* media query for the details tag in smaller screen size. */
 
-@media (max-width: 670px){
-
-  
-.detail-section {
-  flex-direction: column;
-}
-
+@media (max-width: 670px) {
+  .detail-section {
+    flex-direction: column;
+  }
 }
