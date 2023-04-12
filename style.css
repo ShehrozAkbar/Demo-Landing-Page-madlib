@@ -69,14 +69,14 @@ header > div {
 }
 #title .parent {
   line-height: 1em;
-  color: #666;
+  color: #00adb5;
 }
 #title .name {
   font-family: "Roboto", sans-serif;
   font-family: "Slackey", cursive;
   font-size: 2em;
   font-weight: bold;
-  color: #333;
+  color: #00adb5;
   mix-blend-mode: difference;
 }
 
@@ -219,21 +219,21 @@ details p span {
   summary {
     letter-spacing: 0rem;
   }
-  #reference {
+  /* #reference {
     padding-top: 40px;
     flex-direction: column;
     gap: 8px;
-  }
-  #reference > a + a {
+  } */
+  /* #reference > a + a {
     margin-left: 0rem;
-  }
+  } */
 }
 
 /* ====================================================== this CSS for the footer ======================================================*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
 .footer-distributed {
-  background: #666;
+  background: #393e46;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -260,7 +260,7 @@ details p span {
 .footer-distributed h3 {
   font-family: "Roboto", sans-serif;
   font-family: "Slackey", cursive;
-  color: #ffffff;
+  color: #00adb5;
   /* font: 'Slackey' 36px "Open Sans", cursive;
    */
   font-size: 36px;
@@ -270,7 +270,6 @@ details p span {
 .footer-distributed h3 span {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  color: lightseagreen;
 }
 
 /* Footer links */
@@ -290,7 +289,7 @@ details p span {
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: #92999f;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -420,11 +419,8 @@ details p span {
 
 /* media query for the details tag in smaller screen size. */
 
-@media (max-width: 670px){
-
-  
-.detail-section {
-  flex-direction: column;
-}
-
+@media (max-width: 670px) {
+  .detail-section {
+    flex-direction: column;
+  }
 }
