@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,16 +26,23 @@
     <title>Mad LIb Story</title>
   </head>
   <body>
+     <div id="blurry-filter"></div>
     <header>
-      <h2
-        style="
-          font-size: 2rem;
-
-          height: 3rem;
-        "
-      >
-        Header Template
-      </h2>
+    
+      <div>
+        <article id="title">
+          <span class="parent">Team-01 V-43</span><br /><span class="name"
+            >MadLib</span
+          >
+        </article>
+        <article id="reference" class="topnav">
+          <a href="#">Home</a>
+          <a href="#aboutus"
+            >About<span style="visibility: hidden; font-size: 6px">1</span>us</a
+          >
+        </article>
+      </div>
+    
     </header>
     <main>
       <div class="mainWrapper" id="mainWrapper">
@@ -208,14 +216,51 @@
         </div>
       </div>
     </main>
-    <footer
-      style="
-        font-size: 2rem;
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3 class="name">MadLib<span class="team"> Team-01 V-43</span></h3>
 
-        height: 3rem;
-      "
-    >
-      <h2>Footer template</h2>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#">About us</a>
+
+          <a href="#storie">Stories</a>
+
+          <a href="#inst">Instructions</a>
+        </p>
+
+        <p class="footer-company-name">MadLib Team-01 V-43 © 2023</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-location-dot"></i>
+          <p><span>000 street, chingu headquaters</span>000 Island, Earth</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope" style="font-size: 26px"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the Group</span>
+          Working together as a cohesive unit, this group of 5 front-end
+          developers delivers top-quality websites with sleek designs and
+          intuitive user interfaces. With their extensive knowledge of web
+          development tools and technologies, they are a powerhouse team capable
+          of creating exceptional digital experiences for their clients.
+        </p>
+        <!-- push testing in main -->
+      </div>
     </footer>
     <script src="arrays.js"></script>
     <script type="module" src="src/app.js"></script>
