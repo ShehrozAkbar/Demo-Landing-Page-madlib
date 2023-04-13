@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    />
+    <title>Mad Libs</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>The Baobab</h1>
+        <br />
+        <h2>Instructions</h2>
+        <p>
+          MADLIBS is fun to play with friends, but you can also play it by
+          yourself.<br />
+          Fill in all of the input boxes and then click the
+          <strong>'Go Mad'</strong> button.
+        </p>
+      </header>
+
+      <form id="madlibs" onsubmit="createMadLibs(event)">
+        <div class="form-control">
+          <div class="input-element">
+            <input
+              type="text"
+              id="noun_1"
+              name="noun_1"
+              placeholder="Noun"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="nationality"
+              name="nationality"
+              placeholder="Nationality"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjective_1"
+              name="adjective_1"
+              placeholder="Adjective"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="verb_1"
+              name="verb_1"
+              placeholder="Verb"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjective_2"
+              name="adjective_2"
+              placeholder="Adjective"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="noun_2"
+              name="noun_2"
+              placeholder="Noun"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="number_1"
+              name="number_1"
+              placeholder="number"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="number_2"
+              name="number_2"
+              placeholder="Number"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="noun_3"
+              name="noun_3"
+              placeholder="Noun"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="verb_2"
+              name="verb_2"
+              placeholder="Verb"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjective_3"
+              name="adjective_3"
+              placeholder="Adjective"
+              required
+            />
+          </div>
+        </div>
+
+        <button id="submit" type="submit">Go Mad</button>
+      </form>
+
+      <div id="article" class="hidden"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
