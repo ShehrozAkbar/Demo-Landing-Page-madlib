@@ -225,7 +225,7 @@ details p span {
 
 footer{
   width: 100vw;
-  height: 20rem;
+  height: 17rem;
   background-color: var(--footer-background-color);
   display: flex;
   flex-direction: row;
