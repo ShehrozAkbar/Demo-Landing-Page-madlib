@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/story1.css">
+    <title>madlibs game</title>
+
+</head>
+<body>
+    <div id="guide">
+        <p>
+            Fill in the blank fields below
+            or click in the <span id="rand">Random</span>   button 
+            to randomly pick up the words
+
+        </p>
+        <p id="msgerror"> </p>
+    </div>
+   
+    <div id="storie1">
+        <h2 id="title1">Park visit and the lemurs</h2>
+        <p>
+           <span class="spn">Last saturday</span > ,me and my co-workers <span class="spn">visited</span> a park.Our 
+            touristic guide was bringing us in a <span class="spn">wonderful</span> place,where
+            we saw a lot of <span class="spn">lemur</span>  ,he was explaining us the way of 
+            living of those animals: some of them goes out during the
+           <span class="spn">day</span>  and some in the night,in general their food are the
+            fruit and leaf.<span class="spn" >Suddenly </span>,what was surprising,one lemur
+            jumped on the shoulder of <span class="spn">my co-worker</span> ,because it <span class="spn">smelled </span> 
+            the banana smell in his backpack. 
+        </p>
+    </div>    
+    <div id="tab">
+        <table >
+            <tr><td rowspan="10"></td></tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
+            </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+           <div id="inpt">
+            <tr>
+                <td><label class="label">moment</label></td>
+                <td><label class="label">verb in tourism</label></td>
+            </tr>
+            <tr>
+                 <td  > <input  class="inputs" type="text" value=" "></td>
+                 <td> <input class="inputs" type="text" ></td>
+            </tr> 
+           
+         </div> 
+            <tr><td rowspan="10"></td></tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
+            </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr>
+                <td><label class="label">adjectif</label></td>
+                <td><label class="label">noun</label></td>
+            </tr>
+            <tr>
+                 <td> <input class="inputs"type="text"></td> 
+                 <td> <input class="inputs" type="text"></td>
+            </tr> 
+
+            <tr><td rowspan="10"></td></tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
+            </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr>
+                <td><label class="label">noun</label></td>
+                <td><label class="label">adverb</label></td>
+            </tr>
+            <tr>
+                <td><input   class="inputs" type="text"></td> 
+                <td> <input class="inputs" type="text"></td>
+            </tr>
+            <tr><td rowspan="10"></td></tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
+            </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr>
+                <td><label class="label">worker</label></td>
+                <td><label class="label">verb</label></td>
+            </tr>
+            <tr>
+                <td><input class="inputs" type="text"></td> 
+                <td> <input class="inputs" type="text"></td>
+            </tr>
+       </table>
+    </div>  
+  <div id="btn"> 
+  <table> 
+       <tr><td rowspan="2"></td></tr>
+       <tr></tr><tr></tr>
+       <tr><td> <button id="gomad" onclick="display('storie1')">GO MAD</button></td></tr>
+       <tr><td rowspan="2"></td></tr>
+       <tr></tr><tr></tr>
+        <tr><td> <button id="clear" >CLEAR</button></td></tr>
+        <tr><td rowspan="2"></td></tr>
+       <tr></tr><tr></tr>
+       <tr><td> <button id="random" >RANDOM</button></td></tr>
+       <tr><td rowspan="2"></td></tr>
+       <tr></tr><tr></tr>
+       <tr><td> <button id="back"  onclick="backstr('storie1')">BACK</button></td></tr>
+
+</table> 
+</div> 
+    <script src="src/story1.js"></script>
+</body>
+</html>

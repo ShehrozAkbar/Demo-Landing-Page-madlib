@@ -1,0 +1,123 @@
+body{
+    background-image: url(../assets/img6.jpg);
+    }
+    #storie2{
+          border:2px solid orangered;
+          text-align: center;
+          text-overflow: ;
+          width: 400px;
+          height: 250px;
+          border-radius: 10px;
+          font-size: 0,5rem;
+          font-family:Cambria, Cochin, 'Courier New', Courier, monospace;
+          font: weight 1000px;
+          margin: auto;
+          margin-top: 12%;
+    
+    }
+    #tab{
+        width: 400px;
+        margin: auto;
+    
+    }
+    #btn{
+        margin: auto;
+        width: 300px;
+    }
+    
+    #storie2,#back{
+        display: none;
+    
+    }
+    #storie2{
+       background-image: url(../assets/img2.png);
+        color:aliceblue;
+    }
+    #gomad,#random,#clear,#back{
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        border: 2px solid red;
+        border-radius: 15px;
+        font-size: medium;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #gomad{
+        background-color: green;
+        color: rgb(54, 9, 9);
+    }
+    #random{
+        background-color:aliceblue;
+        color: gray;
+    }
+    #clear{
+        background-color:rgb(54, 9, 9);
+        color: red;
+    }
+    #back{
+        background-color:rgb(54, 9, 9);
+        color: red;
+    }
+    #guide{
+        margin: auto;
+        width: 350px;
+        font-size: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        color:rgb(31, 115, 211);
+        font-weight: bold;
+        margin-top: 2%;
+        background-color:wheat;
+    }
+    #rand{
+        color:green;
+    }
+    /*for the button stories
+    
+    /* for the inputs*/
+    input{
+        border: 3px solid green;
+        border-radius: 15px;
+        width: 150px;
+        height: 30px;
+    } 
+    input:hover{
+        border-color: orangered;
+    }
+    input:active{
+        box-shadow: 5px 5px rgb(54, 9, 9);
+    }  
+    .label{
+        color:rgb(54, 9, 9) ;
+        font-size: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: wheat;
+    } 
+    #title2{
+        color: tomato;
+    }
+    @media all and (max-width:400px){
+        #storie2{
+         width: 200px;
+         overflow:auto;
+         height: 304px;
+        }
+        
+     input{
+         width: 80px;
+ 
+    }
+    #back{
+     margin-top: 60%;
+    }
+    #back,#gomad,#random,#clear{
+     width: 100px;
+    margin-left :33%;
+    }
+    #guide{
+     width: 250px;
+    }
+ }
+ 
+ 

@@ -1,0 +1,127 @@
+body{
+background-image: url(../assets/img5.jpg);
+}
+#storie1{
+      border:2px solid orangered;
+      text-align: center;
+      text-overflow: ;
+      width: 400px;
+      height: 250px;
+      border-radius: 10px;
+      font-size: 0,5rem;
+      font-family:Cambria, Cochin, 'Courier New', Courier, monospace;
+      font: weight 1000px;
+      margin: auto;
+      margin-top: 12%;
+
+}
+#tab{
+    width: 400px;
+    margin: auto;
+
+}
+#btn{
+    margin: auto;
+    width: 300px;
+}
+/*#title1,#title2{
+    color:orangered;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}*/
+#storie1,#back,#msgerror{
+    display: none;
+
+}
+
+#storie1{
+
+  background-color:gray/* url(../assets/img3.JPG);
+    color:aliceblue;*/
+}
+#gomad,#random,#clear,#back{
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#gomad{
+    background-color: green;
+    color: rgb(54, 9, 9);
+}
+#random{
+    background-color:aliceblue;
+    color: gray;
+}
+#clear{
+    background-color:rgb(54, 9, 9);
+    color: red;
+}
+#back{
+    background-color:rgb(54, 9, 9);
+    color: red;
+}
+#guide{
+    margin: auto;
+    width: 350px;
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: green;
+    font-weight: bold;
+    margin-top: 2%;
+}
+#rand{
+    color:gray;
+}
+
+/* for the inputs*/
+input{
+    border: 3px solid green;
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
+} 
+input:hover{
+    border-color: orangered;
+}
+input:active{
+    box-shadow: 5px 5px rgb(54, 9, 9);
+} 
+#inpt{
+    background-color:green;
+}
+.label{
+    color:rgb(54, 9, 9) ;
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: wheat;
+} 
+@media all and (max-width:400px){
+       #storie1{
+        width: 200px;
+        overflow:auto;
+        height: 304px;
+        background-image: url(../assets/img3.JPG);
+       }
+       
+    input{
+        width: 80px;
+
+   }
+   #back{
+    margin-top: 60%;
+   }
+   #back,#gomad,#random,#clear{
+    width: 100px;
+   margin-left: 33%;
+   }
+   #guide{
+    width: 250px;
+   }
+}
+
