@@ -2,7 +2,6 @@ const data = document.getElementById("madlibs");
 const storyPart = document.getElementById("article");
 
 const buildMadLibs = (event) => {
-  //required to prevent the form from reloading on submit
   let nounatxt = document.querySelector("#nouna").value;
   let adjectiveatxt = document.querySelector("#adjectivea").value;
   let verbatxt = document.querySelector("#verba").value;
@@ -45,7 +44,6 @@ const buildMadLibs = (event) => {
   ];
   let bad = true;
   for (let i = 0; i < badWords.length; i++) {
-    // if user don't enter all the filds with appropriate words
     if (
       nounatxt == badWords[i] ||
       adjectiveatxt == badWords[i] ||

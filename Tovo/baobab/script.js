@@ -46,7 +46,6 @@ const createMadLibs = (event) => {
   ];
   let bad = true;
   for (let i = 0; i < badWords.length; i++) {
-    // if user don't enter all the filds with appropriate words
     if (
       noun1txt == badWords[i] ||
       nationalitytxt == badWords[i] ||
@@ -68,9 +67,7 @@ const createMadLibs = (event) => {
   }
   if (bad) {
     alert("Please don't use bad words");
-  }
-  //required to prevent the form from reloading on submit
-  else {
+  } else {
     event.preventDefault();
     madLibs.classList.add("hidden");
 
