@@ -28,35 +28,21 @@ body {
 /* this font is for the logo */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Slackey&display=swap");
 
-#blurry-filter {
-  width: 100%;
-  height: 9rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100' height='100' style='filter:url(%23f)' opacity='.2'/%3E%3C/svg%3E");
-  mask: linear-gradient(black 7rem, transparent);
-  -webkit-mask: linear-gradient(black 7rem, transparent);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100000;
-  pointer-events: none;
-  touch-action: none;
-}
 
 header {
   font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
-  cursor: default;
-}
-
-header {
   width: 100%;
-  height: 8rem;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; */
+  margin-bottom: 3rem;
 }
+
 header > div {
   width: calc(100% - 3rem);
   max-width: 1200px;
@@ -74,19 +60,20 @@ header > div {
   color: #00adb5;
 }
 #title .name {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-family: "Slackey", cursive;
   font-size: 2em;
   font-weight: bold;
+  letter-spacing: 0.1rem;
   color: #00adb5;
-  mix-blend-mode: difference;
 }
 
 #reference {
   display: flex;
 }
 #reference > a {
-  color: #444;
+  color: #EEEEEE;
+  cursor: pointer;
   text-decoration: none;
   letter-spacing: 0.1rem;
   padding: 0.5rem 1rem;
@@ -94,8 +81,7 @@ header > div {
 }
 
 #reference > a:hover{
-  color: #e7eaf6;
-  background-color: #393e46;
+  background-color: #4a4c50;
 }
 #reference > a + a {
   margin-left: 1rem;
@@ -185,7 +171,7 @@ details p span {
 
 .previous {
   position: absolute;
-  top: 45%;
+  top: 43%;
   left: 0rem;
   width: 1.5rem;
   height: 2.5rem;
@@ -197,7 +183,7 @@ details p span {
 
 .next {
   position: absolute;
-  top: 45%;
+  top: 43%;
   right: 0rem;
   width: 1.5rem;
   height: 2.5rem;
@@ -250,7 +236,7 @@ footer{
 
 .footer-left {
   width: 20rem;
-  height: 13rem;
+  height: 10rem;
   /* border: 1px solid white; */
 }
 
@@ -366,7 +352,8 @@ footer{
   }
 
   #reference > a {
-    color: #444;
+    color: #EEEEEE;
+    cursor: pointer;
     text-decoration: none;
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
