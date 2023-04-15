@@ -14,7 +14,7 @@ body {
 
 .unicontainer {
   background-image: url("uniimg.jpeg");
-  height: 100vh;
+  height: 800px;
   /* max-height: 100%; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,6 +189,9 @@ p > span {
     left: 35%;
     right: 35%;
   }
+  .unicontainer {
+    height: 1000px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -198,9 +201,6 @@ p > span {
   .storypara {
     font-size: 14px;
   }
-  h2 {
-    padding-top: 100px;
-  }
   .error {
     left: 20%;
     right: 20%;
@@ -209,6 +209,9 @@ p > span {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .unicontainer {
+    height: 1200px;
   }
 }
 
