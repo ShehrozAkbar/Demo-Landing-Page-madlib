@@ -8,7 +8,7 @@ let verbuser = document.querySelector("#userVerb");
 let occationuser = document.querySelector("#specialDay");
 
 let uniInputs = document.querySelectorAll(".unistory");
-// buttons
+// buttonss
 const clearbtn = document.querySelector(".clear");
 const displaybtn = document.querySelector(".story");
 const randombtn = document.querySelector(".rand");

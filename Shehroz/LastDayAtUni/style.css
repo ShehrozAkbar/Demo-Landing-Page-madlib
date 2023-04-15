@@ -14,7 +14,7 @@ body {
 
 .unicontainer {
   background-image: url("uniimg.jpeg");
-  height: 100vh;
+  height: 800px;
   /* max-height: 100%; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +127,7 @@ input {
   padding: 10px 15px;
 }
 
-span {
+p > span {
   color: violet;
   font-size: calc(100% + 4px);
 }
@@ -189,6 +189,9 @@ span {
     left: 35%;
     right: 35%;
   }
+  .unicontainer {
+    height: 1000px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -197,9 +200,6 @@ span {
   }
   .storypara {
     font-size: 14px;
-  }
-  h2 {
-    padding-top: 100px;
   }
   .error {
     left: 20%;
@@ -210,4 +210,210 @@ span {
     flex-direction: column;
     gap: 10px;
   }
-} ;
+  .unicontainer {
+    height: 1200px;
+  }
+}
+
+:root {
+  --body-bg-color: #eee;
+  --header-background-color: #000000;
+  --secondary-font: "Lato", sans-serif;
+  --defination-title-color: #222831;
+  --footer-background-color: #393e46;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+  background-color: #393e46;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; */
+  /* margin-bottom: 3rem; */
+}
+
+header > div {
+  width: calc(100% - 3rem);
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  width: 100%;
+}
+#title .parent {
+  line-height: 1em;
+  color: #00adb5;
+}
+#title .name {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Slackey", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #00adb5;
+}
+
+#reference {
+  display: flex;
+}
+#reference > a {
+  color: #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+#reference > a + a {
+  margin-left: 1rem;
+}
+/* footer css */
+
+footer {
+  width: 100vw;
+  height: 17rem;
+  background-color: var(--footer-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+}
+
+.footer-left {
+  width: 20rem;
+  height: 10rem;
+  /* border: 1px solid white; */
+}
+
+.footer-left h3 {
+  color: #00adb5;
+  font-family: "Slackey", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-left h3 span {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-links a,
+.footer-links p {
+  color: #eee;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding: 2rem 0.2rem 1rem;
+}
+
+.footer-company-copyright {
+  color: #c6c6c6;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  width: 20rem;
+  height: 13rem;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-right h4 {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-company-about {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #c6c6c6;
+  line-height: 1.3rem;
+}
+
+@media (max-width: 760px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-company-about {
+    width: 18rem;
+    text-align: center;
+  }
+}
+
+/* media query for the details tag in smaller screen size.... */
+
+@media (max-width: 670px) {
+  .detail-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+  }
+
+  #reference > a {
+    color: #eeeeee;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  #reference > a + a {
+    margin-left: 0rem;
+  }
+}
