@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
     <title>Mad Libs</title>
   </head>
   <body>
@@ -24,26 +24,29 @@
         </article>
       </div>
     </header>
+
     <div class="container">
       <div class="items">
-        <h1>The Fossa</h1>
+        <h1>The Baobab</h1>
         <br />
         <h2>Instructions</h2>
-        <p class="sentence">
-          MADLIBS is fun to play with friends, but you can also play it by
-          yourself.<br />
-          Fill in all of the input boxes and then click the
-          <strong>'Go Mad'</strong> button.
-        </p>
+
+        <div class="information">
+          <p>
+            MADLIBS is fun to play with friends, but you can also play it by
+            yourself. Fill in all of the input boxes and then click the
+            <strong>'Go Mad'</strong> button.
+          </p>
+        </div>
       </div>
 
-      <form id="madlibs" onsubmit="buildMadLibs(event)">
+      <form id="madlibs" onsubmit="createMadLibs(event)">
         <div class="form-control">
           <div class="input-element">
             <input
               type="text"
-              id="nouna"
-              name="nouna"
+              id="noun_1"
+              name="noun_1"
               placeholder="Noun"
               required
             />
@@ -52,8 +55,18 @@
           <div class="input-element">
             <input
               type="text"
-              id="adjectivea"
-              name="adjectivea"
+              id="nationality"
+              name="nationality"
+              placeholder="Nationality"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjective_1"
+              name="adjective_1"
               placeholder="Adjective"
               required
             />
@@ -62,8 +75,8 @@
           <div class="input-element">
             <input
               type="text"
-              id="verba"
-              name="verba"
+              id="verb_1"
+              name="verb_1"
               placeholder="Verb"
               required
             />
@@ -72,28 +85,8 @@
           <div class="input-element">
             <input
               type="text"
-              id="verbb"
-              name="verbb"
-              placeholder="Verb"
-              required
-            />
-          </div>
-
-          <div class="input-element">
-            <input
-              type="text"
-              id="numbera"
-              name="numbera"
-              placeholder="Number"
-              required
-            />
-          </div>
-
-          <div class="input-element">
-            <input
-              type="text"
-              id="adjectiveb"
-              name="adjectiveb"
+              id="adjective_2"
+              name="adjective_2"
               placeholder="Adjective"
               required
             />
@@ -102,8 +95,28 @@
           <div class="input-element">
             <input
               type="text"
-              id="numberb"
-              name="numberb"
+              id="noun_2"
+              name="noun_2"
+              placeholder="Noun"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="number_1"
+              name="number_1"
+              placeholder="number"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="number_2"
+              name="number_2"
               placeholder="Number"
               required
             />
@@ -112,9 +125,9 @@
           <div class="input-element">
             <input
               type="text"
-              id="numberc"
-              name="numberc"
-              placeholder="Number"
+              id="noun_3"
+              name="noun_3"
+              placeholder="Noun"
               required
             />
           </div>
@@ -122,9 +135,19 @@
           <div class="input-element">
             <input
               type="text"
-              id="verbc"
-              name="verbc"
+              id="verb_2"
+              name="verb_2"
               placeholder="Verb"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjective_3"
+              name="adjective_3"
+              placeholder="Adjective"
               required
             />
           </div>
@@ -135,6 +158,7 @@
 
       <div id="article" class="hidden"></div>
     </div>
+
     <footer>
       <div class="footer-left">
         <h3 class="name">MadLib<span class="team"> Team-01 V-43</span></h3>
@@ -160,5 +184,6 @@
         <!-- push testing in main -->
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -146,7 +146,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   margin: 0 2rem;
-
 }
 
 .footer-right h4 {
@@ -162,13 +161,11 @@ footer {
   line-height: 1.3rem;
 }
 
-@media (max-width : 880px){
-
-  .container{
+@media (max-width: 880px) {
+  .container {
     width: 80vw;
     height: 90vh;
   }
-
 }
 
 @media (max-width: 760px) {
@@ -232,7 +229,7 @@ footer {
 
 .items h1 {
   font-family: "Open Sans", sans-serif;
-  color: #474787;
+  color: #fff;
   margin: 0;
   text-align: center;
   font-size: 2.25rem;
@@ -240,22 +237,33 @@ footer {
 
 .items h2 {
   font-family: "Open Sans", sans-serif;
-  color: #474787;
+  color: #fff;
   margin: 0;
   text-align: center;
   font-size: 1.563rem;
 }
 
-.items p {
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 1.563rem;
+  margin: 0;
+}
+
+.information {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   letter-spacing: 2px;
   line-height: 30px;
   font-size: 1.125rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: #fff;
 }
 
-.result {
-  color: black;
+.texte {
+  color: #fff;
   font-size: 25px;
   text-align: left;
 }
@@ -329,9 +337,11 @@ button:active {
   line-height: 2;
 }
 
-.addText {
-  background-color: #ffdd59;
-  padding: 0 10px;
+.textInserting {
+  border-bottom: 2px solid #63a4ff;
+  font-weight: 600;
+  background-color: #34ace0;
+  padding: 0 5px;
   margin: 0 5px;
 }
 
