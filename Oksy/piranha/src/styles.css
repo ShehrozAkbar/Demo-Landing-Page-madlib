@@ -84,39 +84,32 @@ section {
 body {
   margin: 0;
   padding: 0;
+
+  overflow-x: hidden;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Slackey&display=swap");
-
-#blurry-filter {
-  width: 100%;
-  height: 9rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100' height='100' style='filter:url(%23f)' opacity='.2'/%3E%3C/svg%3E");
-  mask: linear-gradient(black 7rem, transparent);
-  -webkit-mask: linear-gradient(black 7rem, transparent);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100000;
-  pointer-events: none;
-  touch-action: none;
+:root {
+  --body-bg-color: #eee;
+  --header-background-color: #000000;
+  --secondary-font: "Lato", sans-serif;
+  --defination-title-color: #222831;
+  --footer-background-color: #393e46;
 }
 
 header {
   font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
-  cursor: default;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+  background-color: #393e46;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; 
+  margin-bottom: 3rem;*/
 }
 
-header {
-  width: 100%;
-  height: 8rem;
-  position: sticky;
-  top: 0;
-  z-index: 100000;
-}
 header > div {
   width: calc(100% - 3rem);
   max-width: 1200px;
@@ -134,25 +127,29 @@ header > div {
   color: #00adb5;
 }
 #title .name {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-family: "Slackey", cursive;
   font-size: 2em;
   font-weight: bold;
+  letter-spacing: 0.1rem;
   color: #00adb5;
-  mix-blend-mode: difference;
 }
 
 #reference {
   display: flex;
 }
 #reference > a {
-  color: #444;
+  color: #eeeeee;
+  cursor: pointer;
   text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
+
 #reference > a + a {
   margin-left: 1rem;
 }
-
 .mainWrapper {
   background-image: url(blackout-piranha.jpg);
   font-family: "Open Sans", sans-serif;
@@ -278,170 +275,79 @@ h1 {
   padding-top: 0.5rem;
   color: white;
 }
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-.footer-distributed {
-  background: #393e46;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-  padding: 55px 50px;
+footer {
+  /* width: 100vw;*/
+  font-family: var(--secondary-font);
+  height: 17rem;
+  background-color: var(--footer-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top;
+.footer-left {
+  width: 20rem;
+  height: 10rem;
+  /* border: 1px solid white; */
 }
 
-/* Footer left */
-
-.footer-distributed .footer-left {
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3 {
-  font-family: "Roboto", sans-serif;
-  font-family: "Slackey", cursive;
+.footer-left h3 {
   color: #00adb5;
-  /* font: 'Slackey' 36px "Open Sans", cursive;
-   */
-  font-size: 36px;
-  margin: 0;
+  font-family: "Slackey", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-.footer-distributed h3 span {
-  font-size: 20px;
+.footer-left h3 span {
+  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
 }
 
-/* Footer links */
-
-.footer-distributed .footer-links {
-  color: #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
 }
 
-.footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  font-weight: 400;
+.footer-links a,
+.footer-links p {
+  color: #eee;
+  letter-spacing: 0.1rem;
   text-decoration: none;
-  color: inherit;
+  padding: 2rem 0.2rem 1rem;
 }
 
-.footer-distributed .footer-company-name {
-  color: #92999f;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
+.footer-company-copyright {
+  color: #c6c6c6;
+  font-size: 0.9rem;
 }
 
-/* this CSS is for the Footer Center */
-
-.footer-distributed .footer-center {
-  width: 35%;
+.footer-right {
+  width: 20rem;
+  height: 13rem;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 400;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer-distributed .footer-center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.footer-distributed .footer-center p a {
-  color: lightseagreen;
-  text-decoration: none;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight: 300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
+.footer-right h4 {
   font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
-.footer-distributed .footer-icons {
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
+.footer-company-about {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #c6c6c6;
+  line-height: 1.3rem;
 }
 
 @media (max-width: 642px) {
@@ -449,22 +355,40 @@ h1 {
     padding: 2rem;
   }
 }
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
+
+@media (max-width: 760px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
+  .footer-left {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-company-about {
+    width: 18rem;
     text-align: center;
-  }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0;
   }
 }
 
@@ -473,5 +397,27 @@ h1 {
 @media (max-width: 670px) {
   .detail-section {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+  }
+
+  #reference > a {
+    color: #eeeeee;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  #reference > a + a {
+    margin-left: 0rem;
   }
 }
