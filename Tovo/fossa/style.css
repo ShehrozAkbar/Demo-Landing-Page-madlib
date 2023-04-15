@@ -1,27 +1,30 @@
 html {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   background: url("./fossa.jpg") no-repeat center fixed;
   background-size: cover;
+  overflow-x: hidden;
+  font-size: 18px;
 }
 
 body {
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
   min-height: 100vh;
   display: flex;
-  overflow-y: hidden;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
 }
 
 .container {
-  margin: 0 auto;
-  min-width: 60%;
-  max-width: 72%;
-  min-height: 62%;
-  max-height: 90%;
-  padding: 30px 0;
-  background-color: rgb(82, 136, 217, 0.3);
+  margin: 1rem auto;
+  width: 40rem;
+  height: 40rem;
+  padding: 2rem;
+  background-color: rgb(82, 136, 217, 0.6);
   border-radius: 20px;
+  justify-content: center;
   overflow-y: auto;
 }
 
@@ -85,18 +88,18 @@ header > div {
 footer {
   width: 100vw;
   height: 17rem;
-  background-color: var(--footer-background-color);
+  background-color: #393e46;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 4rem;
 }
 
 .footer-left {
   width: 20rem;
-  height: 10rem;
+  height: 15rem;
   /* border: 1px solid white; */
+  margin: 0 2rem;
 }
 
 .footer-left h3 {
@@ -124,7 +127,7 @@ footer {
   color: #eee;
   letter-spacing: 0.1rem;
   text-decoration: none;
-  padding: 2rem 0.2rem 1rem;
+  padding: 1rem 0.2rem 0rem;
   font-family: var(--secondary-font);
 }
 
@@ -142,6 +145,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 2rem;
+
 }
 
 .footer-right h4 {
@@ -157,6 +162,15 @@ footer {
   line-height: 1.3rem;
 }
 
+@media (max-width : 880px){
+
+  .container{
+    width: 80vw;
+    height: 90vh;
+  }
+
+}
+
 @media (max-width: 760px) {
   footer {
     display: flex;
@@ -169,8 +183,8 @@ footer {
   }
 
   .footer-left {
-    width: auto;
-    height: auto;
+    width: 20rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,28 +230,36 @@ footer {
   }
 }
 
-.items h1,
-h2 {
+.items h1 {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #474787;
   margin: 0;
   text-align: center;
+  font-size: 2.25rem;
 }
 
-.sentence {
+.items h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  color: #474787;
+  margin: 0;
+  text-align: center;
+  font-size: 1.563rem;
+}
+
+.items p {
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   letter-spacing: 2px;
   line-height: 30px;
-  color: #fff;
+  font-size: 1.125rem;
 }
 
-.texte {
-  color: #fff;
+.result {
+  color: black;
   font-size: 25px;
   text-align: left;
 }
+
 .form-control {
   display: flex;
   flex-direction: row;
@@ -268,8 +290,8 @@ button {
   height: 45px;
   width: 200px;
   font-size: 18px;
-  background-color: #34ace0;
   cursor: default;
+  background-color: #34ace0;
   font-family: "Open Sans", sans-serif;
   border-radius: 25px;
   display: block;
@@ -307,25 +329,23 @@ button:active {
   line-height: 2;
 }
 
-.textInserting {
-  border-bottom: 3px solid #63a4ff;
-  font-weight: 600;
-  background-color: #34ace0;
-  padding: 0 5px;
+.addText {
+  background-color: #ffdd59;
+  padding: 0 10px;
   margin: 0 5px;
 }
 
 @media only screen and (max-width: 600px) {
-  h2 {
-    font-size: 15px;
+  .header h2 {
+    font-size: 0.9375rem;
     margin-top: 5px;
   }
   .container {
-    max-width: 100%;
+    max-width: 100vw;
     max-height: 86vh;
   }
 
   .input-element {
-    margin: 5px;
+    margin: 3px;
   }
 }
